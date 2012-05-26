@@ -1,2 +1,2 @@
-mvied-example-plugin
+Mvied Example Plugin
 ====================
