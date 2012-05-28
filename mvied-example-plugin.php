@@ -34,7 +34,7 @@ set_include_path(implode(PATH_SEPARATOR, $include_paths));
 
 function mvied_example_autoloader($class) {
 	$filename = str_replace('_', '/', $class) . '.php';
-	include $filename;
+	@include $filename;
 }
 spl_autoload_register('mvied_example_autoloader');
 
