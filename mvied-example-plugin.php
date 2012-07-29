@@ -25,16 +25,9 @@
     along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-$include_paths = array(
-	get_include_path(),
-	dirname(__FILE__),
-	dirname(__FILE__) . '/lib'
-);
-set_include_path(implode(PATH_SEPARATOR, $include_paths));
-
 function mvied_example_autoloader($class) {
-	$filename = str_replace('_', '/', $class) . '.php';
-	@include $filename;
+	$filename = str_replace('_', DIRECTORY_SEPARATOR, $class) . '.php';
+	@include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . $filename;
 }
 spl_autoload_register('mvied_example_autoloader');
 

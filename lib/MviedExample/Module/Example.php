@@ -7,10 +7,7 @@
  *
  */
 
-require_once('Mvied/Module.php');
-require_once('Mvied/Module/Interface.php');
-
-class MviedExample_Module_Example extends Mvied_Module implements Mvied_Module_Interface {
+class MviedExample_Module_Example extends Mvied_Plugin_Module implements Mvied_Plugin_Module_Interface {
 
 	/**
 	 * Initialize Module
