@@ -7,7 +7,7 @@
  *
  */
 
-class MviedExample extends Mvied_Plugin {
+class MviedExample extends Mvied_Plugin_Modular {
 
 	/**
 	 * Plugin Settings

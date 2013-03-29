@@ -7,7 +7,7 @@
  *
  */
 
-class MviedExample_Module_Example extends Mvied_Plugin_Module implements Mvied_Plugin_Module_Interface {
+class MviedExample_Module_Example extends Mvied_Plugin_Module {
 
 	/**
 	 * Initialize Module
